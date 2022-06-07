@@ -1,0 +1,183 @@
+/*page structure*/
+body{
+    font-family: 'Courier New';
+    background-color: #232025;
+    color: #ff0000;
+    transition: 1s;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    }
+
+header a{
+    text-decoration: none;
+    color: #aaaaaa;
+    }
+
+header a:hover{
+    color: #ffffff;
+    font-size: 18px;
+    transition: all 1.5s;
+    }
+
+#navbar {
+    margin:10px;
+    display: flex;
+    justify-content: center;
+}
+
+#headeritem{
+    padding: 0 50px 0 0;
+    }
+
+/*form*/
+#bitacora {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    border-radius: 10px;
+    background-color: #ffffff;
+}
+
+h1{
+    text-align: center;
+    padding: 0 0 20px 0;
+    border-bottom: 1px solid silver;
+}
+
+form{
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+
+.formitem {
+    position: relative;
+    border-bottom: 2px solid #adadad;
+    margin: 30px 0;
+}
+
+#type{
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+label{
+    color: #fff000;
+    font-size: 20px;
+    font-weight: 700;
+    pointer-events: none;
+}
+
+#send{
+    margin-bottom: 10px;
+    width: 100%;
+    height: 50px;
+    border: 1px solid;
+    background: #0000ff;
+    border-radius: 25px;
+    font-size: 18px;
+    color: #ffffff;
+    font-weight: 700;
+    cursor: pointer;
+    outline: none;
+}
+
+#send:hover{
+    background-color: #1079cc;
+    font-size: 15px;
+    transition: 2s;
+}
+
+/*run*/
+#run {
+    position:absolute;
+    bottom:0;
+    width:100%;
+}
+
+section {
+    position: relative;
+    width: 100%;
+    height: 100px;
+}
+
+.race0 {
+    position: absolute;
+    left: 0;
+    height: 100px;
+    width: 100%;
+    background: url(../img/race0.png);
+    background-size: 2000px 100px;
+    animation: run 12s linear infinite, recoil 7s linear infinite;
+}
+
+.race1 {
+    position: absolute;
+    left: 0;
+    height: 100px;
+    width: 100%;
+    background: url(../img/race1.png);
+    background-size: 2000px 100px;
+    animation: run 12s linear infinite, recoil 4s linear infinite;
+    animation-delay: 1s;
+}
+
+.race2 {
+    position: absolute;
+    left: 0;
+    height: 100px;
+    width: 100%;
+    background: url(../img/race2.png);
+    background-size: 2000px 100px;
+    animation: run 12s linear infinite;
+    animation-delay: 1.5s;
+}
+
+.race3 {
+    position: absolute;
+    left: 0;
+    height: 100px;
+    width: 100%;
+    background: url(../img/race3.png);
+    background-size: 2000px 100px;
+    animation: run 12s linear infinite, jump 0.7s linear infinite;
+    animation-delay: 2s;
+}
+
+.race4 {
+    position: absolute;
+    left: 0;
+    height: 100px;
+    width: 100%;
+    background: url(../img/race4.png);
+    background-size: 2000px 100px;
+    animation: run 12s linear infinite;
+    animation-delay: 2.5s;
+}
+
+@keyframes run {
+    0%{
+        background-position-x: 0px;
+    }
+    100%{
+        background-position-x: 2000px;
+    }
+}
+
+@keyframes jump {
+    57.5%{
+        transform: translateY(-30px);
+    }
+}
+
+@keyframes recoil {
+    40%{
+        transform: translateX(30px);
+    }
+}

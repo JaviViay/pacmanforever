@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="icon" href="img/pacmanlogo.ico">
+    <meta charset="utf-8">
+    <title>Pacman Forever</title>
+    <link rel="stylesheet" href="styles/mail.css">
+</head>
+<body>
+    <header>
+        <div id="navbar">
+            <div class="grid-item">
+                <a href="index.html">HOME</a>
+            </div>
+        </div>
+    </header>
+    <div id="bitacora">
+        <h1>COMMENTS</h1>
+        <form name="bitacora">
+            <div id="name" class="formitem">
+                <input id="type" type="text" id="name" name="Name" placeholder="Enter your name" required>
+                <label for="name">Name</label>
+            </div>
+            <div id="mail" class="formitem">
+                <input id="type" type="email" id="mail" name="Mail" placeholder="Enter your mail" required>
+                <label for="mail">Mail</label>
+            </div>
+            <div id="comment" class="formitem">
+                <input id="type" type="text" id="comment" name="Comment" placeholder="Enter your comment" required>
+            </div>
+            <div id="buttons">
+                <input id="send" type="submit" value="SEND"></input>
+            </div>
+        </form>
+    </div>
+    <div id="run">
+        <section>
+            <div class="race0"></div>
+            <div class="race1"></div>
+            <div class="race2"></div>
+            <div class="race3"></div>
+            <div class="race4"></div>
+        </section>
+    </div>
+    <script src="scripts/mail.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</body>
+</html>

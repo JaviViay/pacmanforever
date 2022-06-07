@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <link rel="icon" href="img/pacmanlogo.ico">
+        <meta charset="utf-8">
+        <title>Pacman Forever</title>
+        <link rel="stylesheet" href="styles/gamestyle.css">
+        <script src="scripts/gameeasy.js" charset="utf-8"></script>
+        <script src="scripts/infogame.js" charset="utf-8"></script>
+    </head>
+    <body>
+        <header>
+            <div id="navbar">
+                <div id="toggle" class="grid-item">
+                    <i class="indicator"></i>
+                </div>
+                <div class="grid-item">
+                    <a href="index.html">HOME</a>
+                </div>
+                <div class="grid-item">
+                    <a href="">RESET</a>
+                </div>
+            </div>
+        </header>
+        <img src="img/easy.png" style="height: 5em; display: block; margin-left: auto; margin-right: auto;">
+        <div class="console">
+            <div id="container1">
+                <div class="map" id=game_screen></div>
+            </div>
+            <div id="container2">
+                <p id="container3">NAME<br>
+                    <span id="name">
+                        <button onclick="playerName()">What´s your name?</button>
+                    </span>
+                </p>
+                <p id="container3">SCORE<br><span id="score">0</span></p>
+            </div>
+        </div>
+        <div id="wave">
+            <section>
+                <div class="curve1"></div>
+                <div class="curve2"></div>
+                <div class="curve3"></div>
+                <div class="curve4"></div>
+            </section>
+        </div>
+        <script src="scripts/darkmode.js" charset="utf-8"></script>
+    </body>
+</html>
